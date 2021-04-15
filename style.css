@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #d71d32;
+    --orange: #fd7f17;
+    --orange2: #fb4b2c;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --gray: #6c757d;
+    --primary: #007bff;
+    --warning: #ffc107;
+    --light: #ffffff;
+    --dark: #343a40;
+    --font-Mont: 'Montserrat', sans-serif;
+    --font-Noto: 'Noto Serif', serif;
+}
+  
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Noto)
+}
+  
+html {
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+    color: #212529;
+    background-color: var(--light);
+}
+
+a {text-decoration: none;}
+li {list-style: none;}
+
+
+.border-white-100 {border: 10px solid var(--light)}
+.border-white-50 {border: 9px solid var(--light)}
+h1 {
+    font-family: var(--font-Mont);
+    font-size: 3.5em;
+}
+
+h2 {
+    font-family: var(--font-Mont);
+    font-size: 2em;
+    margin: 2em auto;
+    text-align: center;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+
+.text-center {
+    margin: auto;
+    text-align: center;
+}
+
+
+/*---------------------------HEADER-------------------------------*/
+/*Parents*/
+.container {
+    background-color: black;
+    color: var(--light);
+    display: flex;
+}
+
+.container img {
+    width: 230px;
+    margin: 5px 0 0 60px;
+}
+
+.row1 {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1 ul {display: flex;} 
+
+.ul_one li a {
+    margin: 0 30px;
+    color: var(--light);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ul_one li a:hover {color:var(--red); transition: 0.3s;}
+
+
+#login {
+    width: 25px;
+    margin: 0 20px;
+}
+
+#login:hover {
+    border-radius: 0.3rem;
+    background-color: var(--red);
+}
+
+.nav2 {
+    margin-right: 50px;
+}
+
+svg {margin: 0 20px;}
+
+
+span {
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+span a {color:var(--light);}
+span a svg {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+span a:hover svg {
+    transform: rotate(180deg); transition: 0.2s;
+}
+ 
+.middle {
+    border-radius:  2rem;
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    padding-top: 25px;
+}
+
+/*---------------------------SIDERBAR-------------------------------*/
+
+article {
+    margin: auto;
+    text-align: center;
+}
+
+.barSider{
+    width: 100%;
+}
+
+
+/*---------------------------ARTICLE-------------------------------*/
+
+.divone {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.artic img {
+    margin: 10px 50px;
+    transition: 0.5s;
+}
+.artic img:hover {
+    transform: translate(0, -4px);
+    transition: 0.5s;
+}
+
+/*---------------------------MULTIPLE-------------------------------*/
+
+/*-------------ASUS----------------*/
+/*********/
+.position {position: relative;}
+.position h1 {
+    color: var(--light);
+    position: absolute;
+    bottom: 65%;
+    left: 4%;
+    z-index: 1;
+}
+#strix2 {
+    position: absolute;
+    bottom: 46%;
+    left: 10%;
+    text-shadow: none;
+    z-index: 1;
+}
+.zone {
+    width: 100%;
+    height: 600px;
+}
+
+.position a:hover .zone{
+    filter:brightness(50%);
+}
+.red-color {
+    color: var(--red);
+    font-family: var(--font-Mont);
+    font-weight: 700;
+}
+#strix {
+    display: none;
+    animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+#strix2 {
+    display: none;
+    color: var(--light);
+    animation:down 0.8s 0.9s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover #strix {
+    display: inline;
+}
+.position:hover #strix2 {
+    display: inline;
+}
+
+
+/*Animation*/
+
+@keyframes down {
+    0%{transform:translateY(0); opacity: 0;}
+    100%{transform:translateY(50px)}
+}
+
+@keyframes up{
+    0%{transform:translateY(0); opacity: 0;}
+    100%{transform:translateY(-50px)}
+}
+
+
+.ul_two {
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+    text-align: start;
+    color: var(--light);
+    font-size: 1.5em;
+    display: none;
+}
+
+.ul_two li {
+    margin-bottom: 20px ;
+}
+
+.position:hover .ul_two {
+    display: inline;
+}
+
+.position:hover .ul_two li:first-child {
+    animation:up 0.5s 1s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover .ul_two li:nth-child(2) {
+    animation:up 0.5s 1.2s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover .ul_two li:nth-child(3) {
+    animation:up 0.5s 1.4s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover .ul_two li:nth-child(4) {
+    animation:up 0.5s 1.6s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover .ul_two li:nth-child(5) {
+    animation:up 0.5s 1.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+.position:hover .ul_two li:nth-child(6) {
+    animation:up 0.5s 2s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+
+
+/********/
+.two {
+    display: flex;
+}
+
+/*-----------------LG SCREEN and (keyboread/mouse)-------------------*/
+
+#strix3 {
+    z-index: 1;
+}
+.LG {
+    width: 100%;
+    height: 500px;
+}
+
+.position a:hover .LG{
+    filter:brightness(50%);
+}
+#strix3 {
+    display: none;
+    animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+
+.position:hover #strix3 {
+    display: inline;
+}
+
+
+
+/*-----------------RTX GRAPHIC CARD-------------------*/
+
+#strix4 {
+    z-index: 1;
+}
+.RTX {
+    width: 100%;
+    height: 500px;
+}
+
+.position a:hover .RTX{
+    filter:brightness(50%);
+}
+#strix4 {
+    display: none;
+    animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+
+.position:hover #strix4 {
+    display: inline;
+}
+
+
+/*-----------------FOOTER-------------------*/
+
+/*******purchase*****/
+
+.before h6 {
+    font-family: var(--font-Mont);
+    font-size: 1em;
+}
+
+.before h6 u {
+    color: var(--red);
+}
+
+.before input {
+    width: 500px;
+    height: 50px;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.before input:invalid {
+    border: 2px solid var(--red);
+    outline: 0px;
+
+}
+.before input:valid {
+    border: 2px solid var(--warning);
+    outline: 0px;
+}
+
+
+
+
+
+.before button {
+    width: 150px;
+    height: 52px;
+    border-radius: 5px;
+    border: 2px solid var(--orange2);
+    font-weight: bold;
+    background-color: var(--orange2);
+    color: var(--light);
+    font-family: var(--font-Mont);
+    margin-left: 5px;
+}
+
+.before button:hover {
+    background-color: var(--light);
+    color: var(--orange2);
+    cursor: pointer;
+}
+
+
+/*******marks*****/
+
+
+.marks {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-image: url("Img/Wave.svg");
+    background-size: cover;
+}
+
+.marks img {
+    width: 110px;
+    margin: 0 20px 0 20px;
+}
+
+.marks img:nth-child(6) {
+    width: 150px;
+}
+
+.marks img:nth-child(7) {
+    width: 150px;
+}
+
+.marks img:nth-child(8) {
+    width: 150px;
+}
+
+
+
+/************footer***********/
+footer {
+    width: 100%;
+    background-image: url("Img/footer.svg");
+    height: 600px;
+    background-size: cover;
+    color: var(--light);
+}
+
+/***send****/
+
+.send {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send img {width: 20px;}
+hr {border: 1px dotted #4d4d4d;}
+
+
+h5 {
+    font-family: var(--font-Mont);
+    font-size: 15px;
+}
+
+/***Allforone***/
+
+.Allforone {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footers h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footers li {
+    margin: 10px 0;
+}
+
+.footers a {
+    color: var(--light);
+    font-size: 13px;
+}
+
+.footers a:hover {
+    color: var(--orange);
+}
+
+
+/***endlogo***/
+
+.end img {
+    width: 130px;
+}
+
+.end {
+    margin: auto;
+    text-align: center;
+}
+
+/****social media*****/
+
+.media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+.media h4 {
+    color: black;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    font-family: var(--font-Mont);
+}
+.media img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/*Anmation*/
+
+.media img:hover {
+    animation:rotate.4s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes rotate {
+    0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+}
+
