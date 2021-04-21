@@ -1,6 +1,6 @@
 var next = document.getElementById('bar');
 
-var ArrImage = ["Img/pic02.png","Img/pic03.png","Img/pic04.png","Img/pic05.png","Img/pic06.png","Img/pic07.png"];
+var ArrImage = ["Img/pic01.png","Img/pic02.png","Img/pic03.png","Img/pic04.png","Img/pic05.png","Img/pic06.png","Img/pic07.png"];
 var IndexImage = 0;
 
 function chang() {
