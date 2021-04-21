@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap');
 
 :root {
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
     --red: #d71d32;
     --orange: #fd7f17;
     --orange2: #fb4b2c;
@@ -24,7 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-Noto)
+    font-family: var(--font-Noto);
 }
   
 html {
@@ -41,9 +38,6 @@ body {
 a {text-decoration: none;}
 li {list-style: none;}
 
-
-.border-white-100 {border: 10px solid var(--light)}
-.border-white-50 {border: 9px solid var(--light)}
 h1 {
     font-family: var(--font-Mont);
     font-size: 3.5em;
@@ -57,12 +51,10 @@ h2 {
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
 
-
 .text-center {
     margin: auto;
     text-align: center;
 }
-
 
 /*---------------------------HEADER-------------------------------*/
 /*Parents*/
@@ -70,23 +62,27 @@ h2 {
     background-color: black;
     color: var(--light);
     display: flex;
+    justify-content: space-evenly;
 }
 
-.container img {
-    width: 230px;
-    margin: 5px 0 0 60px;
+#ICON {
+    display: none;
+    margin: 11px auto;
 }
+
+.logoW img {width: 230px;}
 
 .row1 {
-    width: 100%;
-    height: 110px;
+    height: 127px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
+
 .nav1 ul {display: flex;} 
 
 .ul_one li a {
+    font-family: var(--font-Mont);
     margin: 0 30px;
     color: var(--light);
     font-weight: bold;
@@ -95,42 +91,12 @@ h2 {
 
 .ul_one li a:hover {color:var(--red); transition: 0.3s;}
 
-
-#login {
-    width: 25px;
-    margin: 0 20px;
-}
-
-#login:hover {
-    border-radius: 0.3rem;
-    background-color: var(--red);
-}
-
-.nav2 {
-    margin-right: 50px;
-}
-
 svg {margin: 0 20px;}
 
-
-span {
-    font-weight: bold;
-    font-size: 10px;
-    margin-left: 10px;
-    position: relative;
-}
-span a {color:var(--light);}
-span a svg {
-    position: absolute;
-    top: 2px;
-    left: 5px;
-}
-span a:hover svg {
-    transform: rotate(180deg); transition: 0.2s;
-}
+svg:hover #orng {fill: var(--orange2);}
  
 .middle {
-    border-radius:  2rem;
+    border-radius:  2em;
     border-left: 2px solid var(--dark);
     border-right: 2px solid var(--dark);
     padding-top: 25px;
@@ -147,16 +113,15 @@ article {
     width: 100%;
 }
 
-
 /*---------------------------ARTICLE-------------------------------*/
 
 .divone {
-    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
 }
+
 .artic img {
     margin: 10px 50px;
     transition: 0.5s;
@@ -164,6 +129,7 @@ article {
 .artic img:hover {
     transform: translate(0, -4px);
     transition: 0.5s;
+    font-weight: bold;
 }
 
 /*---------------------------MULTIPLE-------------------------------*/
@@ -177,14 +143,14 @@ article {
     bottom: 65%;
     left: 4%;
     z-index: 1;
+    display: none;
+    animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
 }
-#strix2 {
-    position: absolute;
-    bottom: 46%;
-    left: 10%;
-    text-shadow: none;
-    z-index: 1;
+
+.border-wlx {
+    margin: 0 16px 10px 16px;
 }
+
 .zone {
     width: 100%;
     height: 600px;
@@ -198,19 +164,8 @@ article {
     font-family: var(--font-Mont);
     font-weight: 700;
 }
-#strix {
-    display: none;
-    animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
-}
-#strix2 {
-    display: none;
-    color: var(--light);
-    animation:down 0.8s 0.9s cubic-bezier(0.25,0.46,0.45,0.94) both;
-}
+
 .position:hover #strix {
-    display: inline;
-}
-.position:hover #strix2 {
     display: inline;
 }
 
@@ -240,6 +195,7 @@ article {
 
 .ul_two li {
     margin-bottom: 20px ;
+    font-family: var(--font-Mont);
 }
 
 .position:hover .ul_two {
@@ -266,12 +222,16 @@ article {
 }
 
 
+
+/*-----------------LG SCREEN and (keyboread/mouse)-------------------*/
 /********/
 .two {
     display: flex;
 }
 
-/*-----------------LG SCREEN and (keyboread/mouse)-------------------*/
+.border-wsL {
+    margin: 6px 8px 16px 16px ;
+}
 
 #strix3 {
     z-index: 1;
@@ -296,6 +256,10 @@ article {
 
 
 /*-----------------RTX GRAPHIC CARD-------------------*/
+
+.border-wsR {
+    margin: 6px 16px 16px 8px ;
+}
 
 #strix4 {
     z-index: 1;
@@ -345,7 +309,7 @@ article {
 
 }
 .before input:valid {
-    border: 2px solid var(--warning);
+    border: 2px solid #80cc28;
     outline: 0px;
 }
 
@@ -377,16 +341,16 @@ article {
 
 .marks {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 200px;
     background-image: url("Img/Wave.svg");
     background-size: cover;
 }
 
 .marks img {
     width: 110px;
-    margin: 0 20px 0 20px;
+    /* margin: 0 20px 0 20px; */
 }
 
 .marks img:nth-child(6) {
@@ -494,4 +458,5 @@ h5 {
     0%{transform:rotate(0)}
     100%{transform:rotate(360deg)}
 }
+
 
