@@ -1,0 +1,276 @@
+/*****FOR SVG*****/
+
+.cls-1 {
+    fill:none;
+    stroke:var(--red);
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:16px;
+}
+.cls-2 {
+    fill:var(--red);
+}
+
+ 
+@media (max-width: 576px) {
+    #strix {
+        top: 10%;
+    }
+    
+    .nav2 {
+        display: none;
+    }
+    
+    
+    .before input {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .before button {
+        width: 300px;
+        height: 52px;
+        font-size: 17px;
+    }
+
+    
+}  
+
+
+@media (max-width: 680px) {
+    .before input {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .before button {
+        width: 300px;
+        height: 52px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+
+    .two {
+        flex-wrap: wrap;
+    }
+
+    .LG, .RTX {
+        width: 100%;
+        height: 100%;
+    }
+
+    .border-wsL {
+        margin: 6px 16px 16px 16px !important;
+    }
+
+    .border-wsR {
+        margin:  0 16px 16px 16px !important;
+    }
+
+    #strix {
+        display: inline;
+        animation:none;
+        bottom: 68% ;
+        left: 3%;
+    }
+
+    .position a:hover .zone{
+        filter:none;
+    }
+
+    .position:hover #strix {
+        display: inline;
+    }
+
+    .position:hover .ul_two {
+        display: none;
+    }
+
+    .LG {
+        height: 100%;
+    }
+    
+    .position a:hover .LG {
+        filter:none !important;
+    }
+
+    #strix3 {
+        display: inline !important;
+        animation:none !important;
+        top: 4%;
+    }
+
+
+    .RTX {
+        height: 100%;
+    }
+    
+    .position a:hover .RTX{
+        filter:none !important;
+    }
+    #strix4 {
+        display: inline !important;
+        animation:none !important;
+        top: 4%;
+    }
+    
+    
+    
+    
+}   
+  
+
+@media (max-width: 1000px) {
+    
+    /*-----LG/keyboread/mouse------*/
+
+    .border-wsL {
+        margin: 6px 8px 16px 16px ;
+    }
+
+    #strix3 {
+        z-index: 1;
+    }
+    .LG {
+        width: 100%;
+        height: 500px;
+    }
+
+    .position a:hover .LG {
+        filter:brightness(50%);
+    }
+    #strix3 {
+        display: none;animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+    }
+
+    .position:hover #strix3 {
+        display: inline;
+    }
+
+    /*--------RTX GRAPHIC CARD-------*/
+
+    .border-wsR {
+        margin: 6px 16px 16px 8px ;
+    }
+
+    #strix4 {
+        z-index: 1;
+    }
+    .RTX {
+        width: 100%;
+        height: 500px
+    }
+
+    .position a:hover .RTX{
+        filter:brightness(50%);
+    }
+
+    #strix4 {
+        display: none;
+        animation:down 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+    }
+
+    .position:hover #strix4 {
+        display: inline;
+    }
+
+    
+    footer {
+        background-image: none;
+        background-color: black;
+
+    }
+    .media {
+        background-color: white;
+        height: 80px;
+        margin:auto;
+        justify-content: center;
+    }
+
+    .media h4 {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    /*****HEADER*****/
+    .nav1 {
+        display: none;
+    }
+    #ICON {
+        display: inline;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*****TITLES*****/
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /*****Articles******/
+    
+    .artic img {
+        width: 100px;
+    }
+
+    /*****ASUS/Motherboard******/
+    
+    /* #strix {
+        bottom: 75%;
+    }  */
+
+    .zone {
+        height: 100%;
+    }
+
+
+    .ul_two {
+        bottom: -5%;
+        right: 3%;
+        font-size: 1em;
+    }
+
+    /*****LG/keyboread/mouse*****/
+
+    .LG {
+        width: 100%;
+        height: 100%;
+    }
+    .RTX {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 1450px) {
+    .marks img {
+        width: 70px;
+    }
+
+} 
