@@ -7,20 +7,42 @@
     stroke-linejoin:round;
     stroke-width:16px;
 }
+
 .cls-2 {
     fill:var(--red);
 }
 
+@media (max-width: 395px) {
+    .divone img {
+        width: 95px !important;
+    }
+
+}
+
+
+
  
 @media (max-width: 576px) {
+    .barSider {
+        height: 250px;
+    }
+
+    .zone {
+        height: 213.583px !important;
+    }
+
     #strix {
         top: 10%;
     }
     
+    strong {
+        color: var(--teal) !important;
+    }
+
+    
     .nav2 {
         display: none;
     }
-    
     
     .before input {
         text-align: center;
@@ -34,7 +56,24 @@
         font-size: 17px;
     }
 
-    
+    .marks {
+        justify-content: space-evenly;
+    }
+
+    .Allforone {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .end {
+        margin: 50px 0 0 0;
+    }
+
+
 }  
 
 
@@ -50,12 +89,12 @@
         height: 52px;
         font-size: 17px;
     }
+    
 }
 
 
 
 @media (max-width: 780px) {
-
     .two {
         flex-wrap: wrap;
     }
